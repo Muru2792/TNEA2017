@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_cutoff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@drawable/v1">
+
+
+
+    <LinearLayout
+        android:id="@+id/lt_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        >
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:maxLines="2"
+        android:id="@+id/txtContentCutoff"
+        android:padding="5dp"
+        android:layout_alignTop="@+id/fab_cut"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/fab_cut"
+        android:layout_toStartOf="@+id/fab_cut"
+        android:layout_weight="0.77" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_gradient_white_24dp"
+        android:id="@+id/fab_cut"
+        android:baselineAlignBottom="false"
+        app:backgroundTint="#0d47a1"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentRight="true"
+        />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollLinear2"
+        android:layout_below="@+id/lt_top"
+        android:layout_above="@+id/adViewHomeCutoff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_below="@+id/contentHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/liveLt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_other1"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Register Now \u0026 Get live update on TNEA 2017"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:autoLink="web"
+                    android:textColor="#ffffff"
+                    android:id="@+id/liveCutoff"/>
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:padding="15dp"
+        android:background="#0d47a1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Enter Your Cut-Off *"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txtCutTitle1"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/cutoff"
+            android:layout_marginTop="10dp"
+            android:hint="Cut Off Marks"
+            android:paddingLeft="5dp"
+            android:background="#FFFFFF"
+            android:inputType="numberDecimal"
+            android:textSize="14dp"
+
+            android:nextFocusDown="@+id/spin_community"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Select Your Community"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txtComtitle1" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/spin_community"
+            android:background="#FFFFFF"
+            android:spinnerMode="dialog"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Choose Your Course"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txtCurseTitle1" />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Course"
+            android:id="@+id/autoCourseList"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:paddingLeft="5dp"
+            android:background="#FFFFFF"
+            android:imeOptions="actionDone"
+
+            android:inputType="textNoSuggestions"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="SUBMIT"
+            android:id="@+id/btn_sub"
+            android:layout_gravity="center_horizontal"
+            android:background="#021c6a"
+            android:textColor="#FFFFFF" />
+		</LinearLayout>
+    </LinearLayout>
+	</ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewHomeCutoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

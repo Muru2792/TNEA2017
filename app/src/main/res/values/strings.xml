@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TNEA Counseling APP</string>
+
+
+    <string name="banner_ad_unit_id">ca-app-pub-5508938394844540/3093997719</string>
+    <string name="banner_ad_unit_id1">ca-app-pub-5508938394844540/7524197310</string>
+    <string name="banner_ad_unit_id2">ca-app-pub-5508938394844540/3093997719</string>
+    <string name="banner_ad_unit_id3">ca-app-pub-5508938394844540/4570730911</string>
+    <string name="banner_ad_unit_id4">ca-app-pub-5508938394844540/7524197310</string>
+    <string name="banner_ad_unit_id5">ca-app-pub-5508938394844540/3093997719</string>
+    <string name="banner_ad_unit_id6">ca-app-pub-5508938394844540/3093997719</string>
+
+
+    <string name="title">TNEA Counselling Guide</string>
+    <string name="home">Welcome to TNEA Counselling Guide - 2017</string>
+    <string name="toolCollegeList">Search Colleges By Cutoff</string>
+    <string name="conttent">A4N- Holistic approach with detailed analysis of Industry Demand Vs Courses Vs Colleges analysed across performance in placements, Industry connect, faculty Quality, Infrastructure and Conducive environment for learning. Because, we Know, The Choice of Engineering is a life time decision for a student and parents</string>
+    <string name="_22_12_25_am">22:12:25 AM</string>
+
+</resources>

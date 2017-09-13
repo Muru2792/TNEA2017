@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box"
+    android:padding="5dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Computer science"
+        android:textColor="#D70000"
+        android:textSize="14dp"
+        android:id="@+id/pastcourse"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp">
+
+            <LinearLayout
+                android:background="@drawable/box"
+                android:orientation="vertical"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.15">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="OC"
+               android:textSize="14dp"
+               android:textColor="#0D47A1"
+               android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line"
+                    />
+
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="197.5"
+                    android:textSize="14dp"
+                    android:id="@+id/pastoc"
+                    android:layout_gravity="center"/>
+
+              </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/box"
+                android:orientation="vertical"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BCM"
+                    android:textColor="#0D47A1"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line"
+                    />
+
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="197.5"
+                    android:id="@+id/pastbcm"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/box"
+                android:orientation="vertical"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BC"
+                    android:textSize="14dp"
+                    android:textColor="#0D47A1"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line"
+                    />
+
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="197.5"
+                    android:textSize="14dp"
+                    android:id="@+id/pastbc"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/box"
+                android:orientation="vertical"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MBC"
+                    android:textSize="14dp"
+                    android:textColor="#0D47A1"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line"
+                    />
+
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="197.5"
+                    android:id="@+id/pastmbc"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+
+        >
+
+        <LinearLayout
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="0.15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SC"
+                android:textSize="14dp"
+                android:textColor="#0D47A1"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"
+                />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="197.5"
+                android:textSize="14dp"
+                android:id="@+id/pastsc"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="0.15"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCA"
+                android:textSize="14dp"
+                android:textColor="#0D47A1"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"
+                />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="197.5"
+                android:textSize="14dp"
+                android:id="@+id/pastsca"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="0.15"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ST"
+                android:textSize="14dp"
+                android:textColor="#0D47A1"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"
+                />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="197.5"
+                android:textSize="14dp"
+                android:id="@+id/pastst"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="90dp"
+   android:padding="10dp"
+    android:weightSum="1"
+    android:background="@drawable/box"
+    android:id="@+id/lay_list_college1">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/clg_black"
+                android:layout_marginTop="8dp"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1.04">
+
+
+
+        <TextView
+            android:id="@+id/textlist"
+            android:text="College Name"
+            android:textSize="14dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+
+            android:gravity="center_vertical"
+            android:layout_weight="0.85"
+            android:background="@drawable/samplepo"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:textSize="12dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/txtLocation"
+                android:textColor="#0D47A1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.15"
+                android:background="@drawable/samplepo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Rank"
+                android:id="@+id/txtRank"
+                android:layout_gravity="end"
+                android:paddingLeft="10dp"
+                android:textColor="#D70000"
+                android:textSize="12dp"
+                android:background="@drawable/samplepo"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/side_icon"
+            android:gravity="right"/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

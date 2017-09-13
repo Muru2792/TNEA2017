@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:id="@+id/snackRankzone"
+    android:paddingTop="20dp"
+    android:background="@drawable/v1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtContentZone"
+        android:gravity="center"
+        android:layout_alignRight="@+id/scrollView2"
+        android:layout_alignEnd="@+id/scrollView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/txtContentZone"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/adViewtopRankList">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_below="@+id/contentHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/liveTR"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_other1"
+
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Register Now \u0026 Get live update on TNEA 2017"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:autoLink="web"
+                    android:textColor="#ffffff"
+                    android:id="@+id/liveTopRank"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lt_zone1"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="5dp"
+
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imagepo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/chennai" />
+
+            <TextView
+                android:id="@+id/textz1"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Chennai | Kancheepuram Thiruvallur"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_zone2"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageclercal"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                 android:background="@color/white_pressed"
+                android:src="@drawable/madurai" />
+
+            <TextView
+                android:id="@+id/textz2"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Madurai | Sivaganga\nRamanathapuram\nDindugal | Nagapattinam"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+
+
+        <LinearLayout
+            android:id="@+id/lt_zone3"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imagesbout"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/vilupuram" />
+
+            <TextView
+                android:id="@+id/textz3"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone"
+                android:text="Vellore | Vilupuram\nThiruvannamalai\nAriyalur | Cuddalore"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_zone4"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp"
+
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imagebinfo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/coimbatore" />
+
+            <TextView
+                android:id="@+id/textz4"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Coimbatore | Erode\nNilgiris | Tirupur"
+                android:textSize="11dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lt_zone5"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageshcl"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/salem" />
+
+            <TextView
+                android:id="@+id/textz5"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone"
+                android:text="Salem | Dharmapuri\nKrishnagiri | Namakkal"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/lt_zone6"
+            android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/samplepo"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imagehp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@color/white_pressed"
+            android:src="@drawable/tiruchira" />
+
+        <TextView
+            android:id="@+id/textz6"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Trichy | Thanjavur | Karur\nPerambalur\nPudukottai | Thiruvarur"
+            android:textSize="11dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lt_zone7"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/tirunelveli" />
+
+            <TextView
+                android:id="@+id/textz7"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Tirunelveli | Virudhunagar\nTuticorin\nKanyakumari | Theni"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_zone8"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/tamilnadu" />
+
+            <TextView
+                android:id="@+id/textz8"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Overall Tamilnadu"
+                android:visibility="gone"
+                android:textSize="11dp" />
+        </LinearLayout>
+         </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewtopRankList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/banner_ad_unit_id5">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

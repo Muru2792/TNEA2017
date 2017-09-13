@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+
+    android:id="@+id/search_college"
+    android:background="@drawable/v1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textContentCollege"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/scrollView3"
+        android:layout_alignEnd="@+id/scrollView3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adViewClgSearch"
+        android:layout_below="@+id/textContentCollege"
+        android:id="@+id/scrollView3">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/contentHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/liveLt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_other1"
+
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Register Now \u0026 Get live update on TNEA 2017"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:autoLink="web"
+                    android:textColor="#ffffff"
+                    android:id="@+id/liveCollege"/>
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/liveCollege"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#0d47a1"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note:  Select Any One"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txtClgHint" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/radioGroup"
+            android:gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/codeSearch"
+                android:text="Code Search"
+                android:checked="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Search"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/nameSearch"
+                android:checked="false"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF"/>
+
+
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lt_autoCode"
+            android:layout_marginTop="20dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter College Code"
+
+
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txtClgCollegeTitle" />
+
+
+
+            <AutoCompleteTextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="College Code"
+                android:id="@+id/autoCollegeCode"
+                android:textSize="14dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <TextView
+           android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(OR)"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txtclgOrTitle"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lt_autoName">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter College Name"
+
+
+                android:textSize="14dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtclgNameTitle" />
+
+
+            <AutoCompleteTextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="College Name"
+                android:id="@+id/autoCollegeName"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:background="#FFFFFF"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true"
+                android:imeOptions="actionDone"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Search"
+            android:background="#021c6a"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btn_search"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewClgSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id4">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

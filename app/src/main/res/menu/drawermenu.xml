@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/nav_item_home"
+        android:icon="@mipmap/ic_home" >
+    </item>
+
+    <item android:title="Search">
+        <menu>
+
+            <item android:title="By CutOff"
+                android:id="@+id/nav_item_cutoff"
+                android:icon="@mipmap/ic_gradient_white_24dp" >
+            </item>
+            <item android:title="By College"
+                android:id="@+id/nav_item_college"
+                android:icon="@mipmap/school" >
+            </item>
+            <item android:title="By Course"
+                android:id="@+id/nav_item_course"
+                android:icon="@mipmap/course">
+            </item>
+
+            <item android:title="By District"
+                android:id="@+id/nav_item_district"
+                android:icon="@mipmap/district">
+            </item>
+        </menu>
+    </item>
+
+    <item android:title="Top College">
+        <menu>
+            <item
+                android:title="Top College"
+                android:id="@+id/nav_item_topcollege"
+                android:icon="@mipmap/ic_equalizer_white_24dp"/>
+
+            <item
+                android:title="Ranking"
+                android:id="@+id/nav_item_rating"
+                android:icon="@mipmap/ic_rank"/>
+
+            <item
+                android:title="Rating"
+                android:id="@+id/nav_item_ranking"
+                android:icon="@mipmap/ic_star_border_white_24dp"/>
+
+
+        </menu>
+    </item>
+
+
+
+    <item android:title="Others">
+        <menu>
+
+            <item
+                android:title="Share"
+                android:id="@+id/nav_item_share"
+                android:icon="@drawable/web"/>
+
+            <item
+                android:title="Rate us"
+                android:id="@+id/nav_item_rate"
+                android:icon="@mipmap/ic_rate"/>
+
+            <item
+                android:title="About US"
+                android:id="@+id/nav_item_about"
+                android:icon="@mipmap/aboutus"/>
+
+            <item
+                android:title="Live Support"
+                android:id="@+id/nav_item_live"
+                android:icon="@mipmap/live"/>
+
+
+            <item
+                android:title="Other Products"
+                android:id="@+id/nav_item_other"
+                android:icon="@mipmap/ic_other"/>
+
+            <item
+                android:title="Notification Center"
+                android:id="@+id/nav_item_notification"
+                android:icon="@mipmap/ic_sms_white_24dp"/>
+
+            <item
+                android:title="Terms and Conditions"
+                android:id="@+id/nav_item_terms"
+                android:icon="@mipmap/ic_security_white_24dp"/>
+
+            <item
+                android:title="Privacy Policy"
+                android:id="@+id/nav_item_policy"
+                android:icon="@mipmap/ic_verified_user_white_24dp"/>
+
+
+        </menu>
+    </item>
+
+
+
+
+</menu>

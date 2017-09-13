@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/t1"
+    android:background="@drawable/v1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lt_autocity1"
+        android:layout_weight="1"
+        android:background="@drawable/samplepo1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Choose Your City"
+        android:id="@+id/autoDistsubCollege"
+
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionDone"
+        android:layout_weight="0.85" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/close"
+            android:padding="5dp"
+            android:layout_weight="0.02"
+            android:gravity="right"
+            android:id="@+id/close2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/lt_coursecount1"
+        android:layout_below="@id/lt_autocity1"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:textSize="16dp"
+
+            android:id="@+id/collegCount1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:textAlignment="viewEnd"
+            android:id="@+id/txtCourseName1"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        android:id="@+id/line991"
+        android:layout_below="@+id/lt_coursecount1"/>
+    <ListView
+        android:id="@+id/collegesublist"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/adViewSubCollegeList"
+        android:layout_below="@+id/line991">
+    </ListView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewSubCollegeList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/banner_ad_unit_id3">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

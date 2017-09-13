@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/t1"
+    android:background="@drawable/v1">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:textColor="#0D47A1"
+            android:textSize="16dp"
+            android:id="@+id/Top1"
+            android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:id="@+id/lt_top_autocity">
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose Your City"
+            android:id="@+id/autoTopCollege"
+            android:layout_gravity="center"
+            android:inputType="textNoSuggestions"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:layout_weight="0.9"
+            android:imeOptions="actionDone"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/close"
+            android:padding="5dp"
+            android:layout_weight="0.02"
+            android:gravity="right"
+            android:id="@+id/close3"/>
+    </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"
+            android:id="@+id/line99"
+           />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/collegetoplist"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/adViewTopCollegeList"
+        android:layout_below="@+id/linearLayout">
+    </ListView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewTopCollegeList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/banner_ad_unit_id5">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

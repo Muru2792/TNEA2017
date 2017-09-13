@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v1">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#0d47a1"
+        android:id="@+id/toolbar_notification"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Toolbar Title"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/toolbar_titlenotification"
+            android:textColor="#ffffff" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+<LinearLayout
+    android:padding="10dp"
+    android:layout_below="@+id/toolbar_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lt_recycle"
+    android:layout_above="@+id/adViewNotiCenter">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No Notification Found"
+        android:textSize="16sp"
+        android:id="@+id/noNotify"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+         />
+</LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewNotiCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id1">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId 'com.in22labs.tneaapp'
+        minSdkVersion 19
+        targetSdkVersion 23
+        //multiDexEnabled true
+
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //compile files('libs/mpandroidchartlibrary-2-2-4.jar')
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    compile 'uk.co.chrisjenx:calligraphy:2.1.0'
+    compile 'com.google.android.gms:play-services-analytics:8.4.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.github.amlcurran.showcaseview:library:5.0.0'
+    compile 'com.pushbots:pushbots-lib:2.0.13@aar'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+}

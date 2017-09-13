@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/snackcourse"
+    android:layout_height="match_parent"
+    android:background="@drawable/v1"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:padding="5dp"
+        android:id="@+id/txtContentCurse"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtContentCurse"
+        android:layout_above="@+id/adViewHomeCurse">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_below="@+id/contentHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/liveLt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_other1"
+
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Register Now \u0026 Get live update on TNEA 2017"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:autoLink="web"
+                    android:textColor="#ffffff"
+                    android:id="@+id/liveCourse"/>
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/id0001"
+        >
+
+        <LinearLayout
+            android:id="@+id/lt_cate1"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imagepo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/mech" />
+
+            <TextView
+                android:id="@+id/textg1"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Category1"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_cate2"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageclercal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                 android:background="@color/white_pressed"
+                android:src="@drawable/text" />
+
+            <TextView
+                android:id="@+id/textg2"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cate 2"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lt_cate3"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imagespo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/civil" />
+
+            <TextView
+                android:id="@+id/textg3"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cate 3"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@+id/id0001"
+        android:id="@+id/id0002">
+
+
+
+        <LinearLayout
+            android:id="@+id/lt_cate4"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imagesbout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/computer" />
+
+            <TextView
+                android:id="@+id/textg4"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cate 4"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_cate5"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imagebinfo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/bio" />
+
+            <TextView
+                android:id="@+id/textg5"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cate 5"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_cate6"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/imagewip"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/chemical" />
+
+            <TextView
+                android:id="@+id/textg6"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cate 6"
+                android:textSize="15dp"  />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/idoo2"
+        android:layout_below="@+id/id0002"
+        android:layout_above="@+id/adViewHomeCurse">
+
+
+        <LinearLayout
+            android:id="@+id/lt_cate7"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageshcl"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/agri" />
+
+            <TextView
+                android:id="@+id/textg7"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cate 7"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/lt_cate8"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/samplepo"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imagehp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/white_pressed"
+            android:src="@drawable/electronics" />
+
+        <TextView
+            android:id="@+id/textg8"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Cate 8"
+            android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lt_cate9"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imagehp1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/white_pressed"
+                android:src="@drawable/special"/>
+
+            <TextView
+                android:id="@+id/textg9"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Cate 9"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewHomeCurse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/banner_ad_unit_id3">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

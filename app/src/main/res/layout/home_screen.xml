@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/snackhome"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/v1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_marginTop="7dp"
+        android:textSize="16dp"
+        android:padding="5dp"
+
+        android:id="@+id/contentHome"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/liveLt"
+        android:layout_alignStart="@+id/liveLt" />
+    <LinearLayout
+        android:layout_below="@+id/contentHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:id="@+id/liveLt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_other1"
+
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Register Now \u0026 Get live update on TNEA 2017"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:autoLink="web"
+            android:textColor="#ffffff"
+            android:id="@+id/liveHome"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/liveLt"
+        android:id="@+id/scr_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adViewHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+
+
+        <LinearLayout
+            android:id="@+id/lt_cutoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/samplepo"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/im_cut"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pmc" />
+
+            <TextView
+                android:id="@+id/textcutoff"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="CUT OFF"
+                android:textSize="15dp"
+                android:textColor="#d40000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/lt_cutoff"
+            android:background="@drawable/samplepo"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/im_dis"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/district1" />
+
+            <TextView
+                android:id="@+id/textdistrict"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="DISTRICT"
+                android:textSize="15dp"
+                android:textColor="#d40000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lt_career"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lt_cutoff"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/im_crse"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/course1" />
+
+            <TextView
+                android:id="@+id/textclg"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="COURSE"
+                android:textSize="15dp"
+                android:textColor="#d40000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lt_clg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lt_district"
+            android:layout_toRightOf="@+id/lt_career"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/im_clg"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/school" />
+
+            <TextView
+                android:id="@+id/textlive"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="COLLEGE"
+                android:textSize="15dp"
+                android:textColor="#d40000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lt_career"
+            android:background="@drawable/samplepo"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/im_top"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/topcollege1" />
+
+            <TextView
+                android:id="@+id/textcareer"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="TOP COLLEGE RANK"
+                android:textSize="14dp"
+                android:textColor="#d40000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lt_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lt_clg"
+            android:layout_toRightOf="@+id/lt_live"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/im_ranking"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ranking_full" />
+
+            <TextView
+                android:id="@+id/textranking1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="RANKING"
+                android:textSize="15dp"
+                android:textColor="#d40000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lt_live"
+            android:background="@drawable/samplepo"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/im_rating"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/star_full" />
+
+            <TextView
+                android:id="@+id/textrating"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="RATING"
+                android:textSize="14dp"
+                android:textColor="#d40000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lt_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lt_ranking"
+            android:layout_toRightOf="@+id/lt_rating"
+            android:background="@drawable/samplepo"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/im_abt"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/about" />
+
+            <TextView
+                android:id="@+id/textabout1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="About Us"
+                android:textSize="15dp"
+                android:textColor="#d40000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

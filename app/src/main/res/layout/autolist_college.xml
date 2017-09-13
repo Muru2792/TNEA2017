@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    <TextView
+        android:id="@+id/dist_list"
+        android:text="Course Name"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="25dp"
+        android:gravity="center_vertical"
+        android:layout_weight="0.96"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_location"
+        android:gravity="right"/>
+
+</LinearLayout>
